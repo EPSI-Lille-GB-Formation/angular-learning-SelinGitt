@@ -1,0 +1,15 @@
+@import url("@picocss/pico");
+
+.action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .action a {
+    margin-left: 2rem;
+  }
+  
+  .article {
+    border: 2px solid transparent;
+  }

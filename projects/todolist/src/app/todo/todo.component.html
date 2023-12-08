@@ -1,0 +1,18 @@
+<article appBorderHighlight *ngIf="todo">
+    <div class="grid">
+      <label for="todo-{{ todo.id }}">
+        <input
+          type="checkbox"
+          id="todo-{{ todo.id }}"
+          name="todo-{{ todo.id }}"
+          [checked]="todo.isCompleted"
+          (change)="onCheck()"
+        />
+        {{ todo.title }}
+      </label>
+      <div class="action">
+        <a href="#">Edit</a>
+        <a href="#">Delete</a>
+      </div>
+    </div>
+  </article>

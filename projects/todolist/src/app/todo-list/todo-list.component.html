@@ -1,0 +1,8 @@
+<h1 class="title">Liste des choses à faire :</h1>
+ 
+  <a href="#" role="button" [class.secondary]="!todosDone" (click)="onAllClick()">Toutes les tâches</a>
+  <a href="#" role="button" [class.secondary]="!todosDone" (click)="onClick()">A faire</a>
+  <a href="#" role="button" [class.secondary]="todosDone" (click)="onCheckCompleted()">Terminées</a>
+    <ng-container *ngFor="let todo of filteredTodos">
+      <app-todo *ngIf="todo.isCompleted === todosDone || !todosDone" [value]="todo"></app-todo>
+    </ng-container>

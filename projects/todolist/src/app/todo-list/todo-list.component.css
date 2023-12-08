@@ -1,0 +1,9 @@
+@import url("@picocss/pico");
+
+.title {
+  text-align: center;
+}
+
+a {
+  margin-left: 10rem;
+}
